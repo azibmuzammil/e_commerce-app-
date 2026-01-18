@@ -5,7 +5,8 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 void main() {
   /// Widgets Flutter Binding
   final widgetBinding = WidgetsFlutterBinding.ensureInitialized();
+
   /// Flutter Native Splash
-  FlutterNativeSplash.preserve(widgetsBinding: widgetBinding);
+  // FlutterNativeSplash.preserve(widgetsBinding: widgetBinding);
   runApp(const MyApp());
 }

@@ -1,5 +1,5 @@
 import 'package:e_commerce_app/utils/constants/colors.dart';
-import 'package:e_commerce_app/utils/theme/widgets_theme/appBar_theme.dart';
+import 'package:e_commerce_app/utils/theme/widgets_theme/app_bar_theme.dart';
 import 'package:e_commerce_app/utils/theme/widgets_theme/bottom_sheet_theme.dart';
 import 'package:e_commerce_app/utils/theme/widgets_theme/checkbox_theme.dart';
 import 'package:e_commerce_app/utils/theme/widgets_theme/chip_theme.dart';
