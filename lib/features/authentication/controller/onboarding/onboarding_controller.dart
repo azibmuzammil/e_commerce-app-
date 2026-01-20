@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,6 +21,7 @@ class OnboardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
+      Get.offAll(() => const LoginScreen());
       return;
     }
     currentPageIndex.value++;

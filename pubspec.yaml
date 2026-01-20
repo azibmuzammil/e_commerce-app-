@@ -16,6 +16,7 @@ dependencies:
   lottie: ^3.3.2
   smooth_page_indicator: ^2.0.1
   get: ^4.7.3
+  iconsax: ^0.0.8
 #--------- [ Flutter Packages] ------------
 
 dev_dependencies:
