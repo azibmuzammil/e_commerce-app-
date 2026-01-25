@@ -25,7 +25,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: USizes.spaceBtwItems),
               ULoginForm(),
               SizedBox(height: USizes.spaceBtwSections),
-              FormDivider(title: UTexts.orSignInWith),
+              UFormDivider(title: UTexts.orSignInWith),
               SizedBox(height: USizes.spaceBtwSections),
               USocialButtons(),
             ],

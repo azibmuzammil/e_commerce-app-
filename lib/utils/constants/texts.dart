@@ -25,4 +25,13 @@ class UTexts {
   static const String signIn = 'Sign In';
   static const String createAccount = 'Create Account';
   static const String orSignInWith = 'Or Sign In With';
+  static const String signupTitle = 'Lets Get You Registered';
+  static const String firstName = 'First Name';
+  static const String lastName = 'Last Name';
+  static const String phoneNumber = 'Phone Number';
+  static const String iAgree = 'I agree to';
+  static const privacyPolicy = 'Privacy Policy';
+  static const and = 'and';
+  static const termsOfUse = 'Terms of Use';
+  static const String orSignUpWith = 'Or Sign Up With';
 }

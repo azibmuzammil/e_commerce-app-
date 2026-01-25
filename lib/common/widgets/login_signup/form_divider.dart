@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FormDivider extends StatelessWidget {
-  const FormDivider({super.key, required this.title});
+class UFormDivider extends StatelessWidget {
+  const UFormDivider({super.key, required this.title});
   final String title;
 
   @override
