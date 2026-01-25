@@ -7,4 +7,7 @@ class UImages {
   static const String onBoardingAnimation3 = 'assets/animations/delivery.json';
   static const String facebookLogo = 'assets/logo/facebook-icon.png';
   static const String googleLogo = 'assets/logo/google-icon.png';
+  static const String forgetPassword = 'assets/images/forget_password.png';
+  static const String forgetPasswordSuccess =
+      'assets/images/forget_password_success.png';
 }
