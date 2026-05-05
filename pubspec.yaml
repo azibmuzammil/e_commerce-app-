@@ -31,6 +31,7 @@ flutter:
     - assets/logo/
     - assets/images/
     - assets/animations/
+    - assets/icons/
   #--------- [ ASSETS] ------------
 
   #--------- [ FONTS] ------------
@@ -52,5 +53,4 @@ flutter:
           weight: 600
         - asset: assets/fonts/Nunito-Bold.ttf
           weight: 800
-
   #--------- [ FONTS] ------------

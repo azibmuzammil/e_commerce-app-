@@ -1,12 +1,13 @@
+import 'package:e_commerce_app/common/widgets/appbar/appbar.dart';
+import 'package:e_commerce_app/common/widgets/custom_shapes/circular_container.dart';
+import 'package:e_commerce_app/common/widgets/products/cart/cart_counter_icon.dart';
+import 'package:e_commerce_app/common/widgets/text_fields/search_bar.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_app_bar.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
-import 'package:e_commerce_app/utils/helpers/device_helpers.dart';
-import 'package:e_commerce_app/utils/helpers/helper_function.dart';
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,58 +15,36 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: UPrimaryHeaderContainer(child: Column(children: [UAppBar()])),
-    );
-  }
-}
-
-class UAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const UAppBar({
-    super.key,
-    this.title,
-    this.showBackArrow = false,
-    this.leadingIcon,
-    this.actions,
-    this.leadingOnPressed,
-  });
-
-  final Widget? title;
-  final bool showBackArrow;
-  final IconData? leadingIcon;
-  final List<Widget>? actions;
-  final VoidCallback? leadingOnPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    bool dark = UHelperFunction.isDarkMode(context);
-
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: USizes.md),
-      child: AppBar(
-        automaticallyImplyLeading: false,
-
-        /// Leading
-        leading: showBackArrow
-            ? IconButton(
-                onPressed: Get.back,
-                icon: Icon(
-                  Iconsax.arrow_left,
-                  color: dark ? UColors.white : UColors.dark,
+      body: Stack(
+        children: [
+          SizedBox(height: 340),
+          UPrimaryHeaderContainer(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                UHomeAppBar(),
+                SizedBox(height: USizes.spaceBtwSections),
+                Padding(
+                  padding: EdgeInsets.only(left: USizes.spaceBtwSections),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Popular Categories",
+                        style: Theme.of(
+                          context,
+                        ).textTheme.headlineSmall!.apply(color: UColors.white),
+                      ),
+                      UHomeCategories(),
+                    ],
+                  ),
                 ),
-              )
-            : leadingIcon != null
-            ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
-            : null,
-
-        /// Title
-        title: title,
-
-        /// Actions
-        actions: actions,
+              ],
+            ),
+          ),
+          USearchBar(),
+        ],
       ),
     );
   }
-
-  @override
-  Size get preferredSize => Size.fromHeight(UDeviceHelper.getAppBarHeight());
 }

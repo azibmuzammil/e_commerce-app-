@@ -12,7 +12,7 @@ class UPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return UCurvedEdgeWidget(
       child: Container(
-        height: UDeviceHelper.getScreenHeight(context) * 0.4,
+        height: 320,
         color: UColors.primary,
         child: Stack(
           children: [
@@ -20,8 +20,8 @@ class UPrimaryHeaderContainer extends StatelessWidget {
               top: -150,
               right: -160,
               child: UCircularContainer(
-                height: UDeviceHelper.getScreenHeight(context) * 0.4,
-                width: UDeviceHelper.getScreenHeight(context) * 0.4,
+                height: 320,
+                width: 320,
                 backgroundColor: UColors.white.withValues(alpha: 0.1),
               ),
             ),
@@ -29,8 +29,8 @@ class UPrimaryHeaderContainer extends StatelessWidget {
               top: 50,
               right: -250,
               child: UCircularContainer(
-                height: UDeviceHelper.getScreenHeight(context) * 0.4,
-                width: UDeviceHelper.getScreenHeight(context) * 0.4,
+                height: 320,
+                width: 320,
                 backgroundColor: UColors.white.withValues(alpha: 0.1),
               ),
             ),
