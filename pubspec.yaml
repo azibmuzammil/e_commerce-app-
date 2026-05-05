@@ -17,6 +17,7 @@ dependencies:
   smooth_page_indicator: ^2.0.1
   get: ^4.7.3
   iconsax: ^0.0.8
+  carousel_slider: ^5.1.1
 #--------- [ Flutter Packages] ------------
 
 dev_dependencies:
@@ -32,6 +33,7 @@ flutter:
     - assets/images/
     - assets/animations/
     - assets/icons/
+    - assets/banners/
   #--------- [ ASSETS] ------------
 
   #--------- [ FONTS] ------------
